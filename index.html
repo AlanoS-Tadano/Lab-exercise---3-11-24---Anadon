@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Identifier</title>
+</head>
+<body>
+
+    <script>
+        var a = prompt("Enter the length of side 1 of the triangle: ");
+        var b = prompt("Enter the length of side 2 of the triangle: ");
+        var c = prompt("Enter the length of side 3 of the triangle: ");
+
+
+            if (isNaN(a, b, c)==true) {
+            alert("One of the values is not a number!");
+            } else {
+                window.alert(determineTriangle(a, b, c))
+            }
+
+        function determineTriangle(a, b, c) {
+            if (a==b && b==c) {
+                    return "The triangle is EQUILATERAL";
+
+                } else if (a==b || b==c || a==c) {
+                    return "The triangle is ISOCELES";
+
+                } else {
+                    return "The triangle is SCALENE";
+                }
+        }
+
+                
+            
+        
+    </script>
+</body>
+</html>
